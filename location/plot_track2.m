@@ -1,16 +1,13 @@
-%% for trial 2
-%% figure 1 plots the location where all variables was measured
-%% figure 2 plots the difference between the actual and predicted
+%% Plot for track2
+%% figure 1 plots location of track2
 
 figure(1)
 
 tbl=readtable("track2.csv");
-p=geoscatter(tbl,"latitudeCoordinate","longitudeCoordinate","filled");
-p.SizeData=10;
-%%p.ColorVariable="co2";
-c=colorbar;
-colormap cool;
-c.Label.String="Concentration of CO_2(ppm)";'interpreter';'latex';
+p=geoscatter(tbl,"lat","lon","filled");
+p.SizeData=2;
+
+
 geobasemap streets
 
 hold on
@@ -31,7 +28,7 @@ annotation('arrow',xa,ya)
 
 
 
-title('Trial 2, Jun 9 2021', 'interpreter','latex')
+title('Second track for data collection', 'interpreter','latex')
 
 
 
