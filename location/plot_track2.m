@@ -22,8 +22,8 @@ legend([q r],["Start","End"],'Location','best') %% adding the legend
 
 hold on
 
-xa=[.75 .71];  %% adding an arrow to indicate the direction of travel
-ya=[.66 .71];
+xa=[.7048 .6583];  %% adding an arrow to indicate the direction of travel
+ya=[.8251 .8611];
 annotation('arrow',xa,ya)
 
 
