@@ -26,6 +26,4 @@ xa=[.48 .42];  %% adding an arrow to indicate the direction of travel
 ya=[.15 .15];
 annotation('arrow',xa,ya)
 
-
-
 title('First track for data collection', 'interpreter','latex')
